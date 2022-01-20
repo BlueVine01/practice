@@ -1,0 +1,16 @@
+{
+    "blogs": [
+        {
+            "title": "My First Blog",
+            "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readble content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.... ",
+            "author": "mario",
+            "id": 1
+        },
+        {
+            "title": "Opening Party",
+            "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readble content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.... ",
+            "author": "Yoshi",
+            "id": 2
+        }
+    ]
+}
