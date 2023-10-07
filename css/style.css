@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;        
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* the navigation styling*/
+
+.navigation {
+    background: #f5f5f5;
+    border: 1px solid #fff;
+    /* height: 90px; */
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+nav .Logo {
+    color: #00b074;
+    font-size: 35px;
+    line-height: 80px; 
+    padding: 0 50px;
+    font-weight: bold;
+}
+nav ul {
+    display: block;
+    float: right;
+    line-height: 30px; 
+    margin-right: 20px;
+    text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: #000;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 12px 12px;
+}
+/*ends of the navigation*/
+
+/* link styling*/
+.active {
+    border-bottom: 3px solid #00f198;
+}
+
+a:hover{
+    background: #00f198;
+    color: #000;
+}
+/*ends here*/
+
+/*button design*/
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+.btn {
+    background: #00b074;
+    color: #f5f5f5;
+    padding: 5px 30px;
+    /* border-radius: 30px; */
+    line-height: 30px;
+    transition: 0.3s;
+    /* box-shadow: 5px 0px 12px  #f5f5f5; */
+    cursor: pointer;
+    margin: 30px 10px;
+    border: 1px solid transparent;
+}
+.btn a {
+    color: #f5f5f5;
+}
+
+.btn:hover, .btn a:hover {
+    background-color: #00f198;
+    color: #000;
+}
+
+  .content {
+    background-image: url(../img/carousel-1.jpg);
+     background-size: cover; 
+     font-weight: 400;
+     margin-top: 100px;
+    height: 100vh;
+    width: 100%; 
+} 
+
+
+/*responsiness on mobiles, tablet, small-sized phone*/
+@media screen and (max-width: 952px){
+
+    nav .Logo {
+        font-size: 30px;
+        margin-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+        /* color: #fff; */
+    }
+    a:hover{
+        color: #000;
+    } 
+
+.btn a {
+    color: #f5f5f5;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.content {
+    background-image: url(../img/carousel-1.jpg);
+     font-weight: 500;
+     margin-top: 80px;
+    /* height: 100vh; */
+    width: 100%;  
+} 
+}
+
+
+@media screen and (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 45%;
+        height: 100vh;
+        background: #00b074;
+        top: auto;
+        right: -4%;
+        text-align: right;
+        transition: all 0.2s ;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 22px;
+        line-height: 70px;
+    }
+
+    nav ul li a {
+        font-size: 20px;   
+        color: #fff;
+    }
+    a:hover{
+        background: none;
+        color: #000;
+    }
+   
+    #check:checked ~ ul {
+        right: -50%;
+    }
+
+}
